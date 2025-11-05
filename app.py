@@ -14,7 +14,7 @@ def main():
     if uploaded_file is not None:
 
 
-        os.makedirs("img", exist_ok=True)
+        os.makedirs("img", exist_ok=True)  
 
         file_extension = uploaded_file.name.split(".")[-1]
         unique_filename = f"{uuid.uuid4()}.{file_extension}"
